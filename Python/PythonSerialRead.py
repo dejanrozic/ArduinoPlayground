@@ -21,7 +21,6 @@ def write(L):
         file.write(L[i] + '|')
         file.write(str(nm))
         file.write('\n')
-        nm = nm + 1
     file.close
 
 
@@ -57,7 +56,7 @@ def animate(i):
 
 
 try:
-    ser = serial.Serial("COM5", 115200)
+    ser = serial.Serial("/dev/ttyUSB0", 115200)
     # ser.open()
 except:
     print("Preveri USB in COM port")

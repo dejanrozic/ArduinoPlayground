@@ -51,7 +51,7 @@ void loop()
 {
 
    digitalWrite(13, blink1);   // turn the LED on (HIGH is the voltage level)
-//Serial.println(counter);
+Serial.println(counter);
                      // wait for a second
    // Serial.println(counter);
   if (valuefull == 1)
